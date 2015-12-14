@@ -27,10 +27,10 @@ eeframe$Global_active_power<-as.numeric(eeframe$Global_active_power)
 
 #set par mfrows to 2 rows and 2 columns
 
-par(mfrow=c(2,2))
-
 
 png(filename = "plot4.png",width = 480,height = 480)
+
+par(mfrow=c(2,2))
 
 plot(x=eeframe$DateTime,y=eeframe$Global_active_power,type="l",ylab = "Global Active Power (kilowatts)",xlab = "")
 
